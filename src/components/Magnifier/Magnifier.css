@@ -4,67 +4,118 @@
 }
 
 .show {
-  top: 100px;
-  left: 100px;
-  width: 400px;
-  height: 400px;
-  border: 1px solid #27acb1; 
-  background-color: rgb(161, 221, 227);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* top: 100px;
+  left: 100px; */
+  width: 600px;
+  height: 600px;
+  border: 1px solid #ffffff; 
+  background-color: rgb(243, 243, 235);
   position: relative;
-  img {
-    padding: 25px 75px;
-    width: 250px;
-    height: 350px;
+
+  /* .img-short{
+    width: 100%;   
+    max-width: 250px; 
+    border-radius: 8px;
+  } */
+
+
+  img{
+    /* padding: 25px 75px; */
+    width: auto;
+    height: 525px;
   }
+
   .mask{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: #c497e6;
     position:absolute;
     opacity: 0.5;
+  }
+  h1{
+    position: absolute;
+    align-self: flex-start;
+    font-size: 1.5rem;
   }
 }
 
 
 
 .small {
-  top: 100px;
-  left: 100px;
-  width: 400px;
-  height: 100px;
-  background-color: rgba(228, 225, 183, 0.5);
+  display: flex;
+  /* top: 100px;
+  left: 100px; */
+  width: 600px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.5);
   position: relative;
-  border: 1px solid #d7fd00;
+  border: 1px solid #ffffff;
   border-top: none;
-  img{
-    margin-top: 15px;
-    margin-left: 25px;
+  /* img{
+    margin-top: 5px;
+    margin-left: 5px;
     width: 50px;
     height: 70px;
-    .active{
-      border: 3px solid #5a08f3;
-    }
+  } */
+  .img-short{
+    width: 75px;
+    height: 105px;
   }
-  img.active{
-    border: 3px solid #5a08f3;
+
+  /* img.active{
+    border: 2px solid #5a08f3;
+  } */
+  .small-div{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .small-img{
+    display: flex;
+    width: 90px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    background-color: #c497e6;
+  }
+
+  .active{
+    border: 2px solid #5a08f3;
   }
 }
 
 
 
 .big {
-  top: 150px;
-  left: 550px;
-  width: 400px;
-  height: 400px;
+  display: flex;
+  /* top: 220px;
+  left: 575px; */
+  width: 600px;
+  height: 600px;
   background-color: rgb(166, 182, 239);
-  border: 1px solid #c497e6;
-  border-top: none;
-  position: absolute;
-  background-image: url(public/img/1.jpg);
+  border: 2px solid #c497e6;
+  /* border-top: none; */
+  position: relative;
+  background-image: url(./images/1.jpg);
   display: none;
 }
 
 .big.active {
   display: block;
+}
+
+.box-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  margin-top: 15%;
+  display: flex;
+  align-items: flex-start;
 }
